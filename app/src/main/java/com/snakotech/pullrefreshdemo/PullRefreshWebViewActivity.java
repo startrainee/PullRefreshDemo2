@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import com.snakotech.R;
 import com.snakotech.pullrefreshdemo.pullrefresh.ui.PullToRefreshBase;
 import com.snakotech.pullrefreshdemo.pullrefresh.ui.PullToRefreshBase.OnRefreshListener;
 import com.snakotech.pullrefreshdemo.pullrefresh.ui.PullToRefreshWebView;

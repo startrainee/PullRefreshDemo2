@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:gravity="bottom" >
-    
-    <RelativeLayout 
+    android:gravity="bottom" >-->
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/pull_to_refresh_header_content"
         android:layout_width="fill_parent"
-        android:layout_height="60dp" 
+        android:layout_height="60dp"
         android:paddingBottom="8dp"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        >
 
         <RelativeLayout
             android:id="@+id/pull_to_refresh_header_text"
@@ -40,9 +42,9 @@
                 android:layout_height="wrap_content"
                 android:minWidth="50dp"
                 android:layout_below="@id/pull_to_refresh_header_hint_textview"
-                android:layout_toRightOf="@id/pull_to_refresh_last_update_time_text"
+                android:layout_toEndOf="@id/pull_to_refresh_last_update_time_text"
                 android:layout_marginTop="@dimen/picture_pull_to_refresh_last_update_time_top_margin"
-                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
                 android:textSize="@dimen/picture_pull_to_refresh_last_update_time_text_size"
                 android:textColor="#999999"/>
         </RelativeLayout>
@@ -51,9 +53,9 @@
             android:id="@+id/pull_to_refresh_header_arrow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/pull_to_refresh_header_text"
+            android:layout_toEndOf="@id/pull_to_refresh_header_text"
             android:layout_centerVertical="true"
-            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/xsearch_msg_pull_arrow_down" />
         
@@ -63,10 +65,11 @@
             android:layout_height="28dip"
             android:layout_gravity="center"
             android:gravity="center"
-            android:layout_toLeftOf="@id/pull_to_refresh_header_text"
+            android:layout_toEndOf="@id/pull_to_refresh_header_text"
             android:layout_centerVertical="true"
-            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
             android:indeterminateDrawable="@anim/update_loading_progressbar_anim"
             android:visibility="invisible"/>
     </RelativeLayout>
-</LinearLayout>
+<!--
+</LinearLayout>-->

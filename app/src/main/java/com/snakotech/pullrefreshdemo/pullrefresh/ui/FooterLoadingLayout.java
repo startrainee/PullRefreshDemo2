@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import com.snakotech.pullrefreshdemo.R;
+import com.snakotech.R;
 
 /**
  * 这个类封装了下拉刷新的布局
